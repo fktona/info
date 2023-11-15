@@ -8,10 +8,10 @@ const renderObject = (obj, i) => {
       {Object.entries(obj).map(([key, value], i) => {
         const keyParts = key.split("_").map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
         return (
-          <div className='text-6xl' key={i}>
+          <>
             <strong >{keyParts}</strong>
             {typeof value === 'object' ? renderObject(value, i) : <span>{value}</span>}
-          </div>
+          </>
         );
       })}
     </div>

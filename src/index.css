@@ -32,3 +32,22 @@
   align-items: start;
   gap: 20px;
 }
+
+.drug-item > div > strong{
+  font-size: 40px;
+  color: red;
+  text-align: center;
+  width: 100%;
+}
+
+.drug-item > div div strong{
+  font-si: 40px;
+  color: rgb(0, 4, 255);
+  text-align: center;
+  width: 100%;
+}
+
+.drug-item > div div span:last-child   {
+margin-bottom: 6rem;
+color: aqua;
+}
